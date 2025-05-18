@@ -1,0 +1,123 @@
+body * {
+  visibility: hidden;
+}
+
+#printableOrder, #printableOrder * {
+  visibility: visible;
+}
+
+#printableOrder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80mm; /* Largura padrão para Epson TM-T20X */
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 5mm;
+  color: #000000;
+}
+
+/* Estilo para o cabeçalho */
+#printableOrder h3 {
+  text-align: right;
+  font-size: 10px;
+  margin-bottom: 5mm;
+  color: #000000;
+}
+
+#printableOrder h2 {
+  font-size: 20px;
+  margin: 2mm 0;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+#printableOrder h2.comp {
+  font-size: 12px;
+  margin-bottom: 5mm;
+  color: #000000;
+}
+
+/* Estilo para a lista de itens */
+#printableOrder ul {
+  list-style: none;
+  padding: 0;
+  font-weight: bold;
+  margin: 0;
+  color: #000000;
+}
+
+#printableOrder ul li {
+  margin: 1mm 0;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #000000;
+}
+
+/* Estilo para o total e pagamento */
+#printableOrder p {
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 2mm 0;
+  color: #000000;
+}
+
+/* Estilo para observações */
+#printableOrder h5 {
+  font-size: 14px;
+  margin: 2mm 0;
+  text-align: right;
+  color: #000000;
+}
+
+/* Estilo para a mensagem final */
+#printableOrder h4 {
+  text-align: center;
+  font-size: 14px;
+  margin: 5mm 0;
+  color: #000000;
+}
+
+/* Estilo para a logo */
+#printableOrder .img-nabrasa {
+  text-align: center;
+  margin-top: 5mm;
+}
+
+/* Remove os botões de controle de quantidade */
+.order-item-container button,
+.controlsDiv {
+  display: none !important;
+}
+
+/* Ajusta o container do item para impressão */
+.order-item-container {
+  box-shadow: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilos adicionais para melhorar a aparência */
+#printableOrder .divider {
+  border-top: 1px dashed #000000;
+  margin: 5mm 0;
+}
+
+#printableOrder .total-section {
+  border-top: 2px solid #000000;
+  margin-top: 5mm;
+  padding-top: 5mm;
+}
+
+#printableOrder .item-price {
+  color: #000000;
+}
+
+#printableOrder .item-quantity {
+  color: #000000;
+} 
